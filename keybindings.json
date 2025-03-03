@@ -1,0 +1,36 @@
+[
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "!panelMaximized && terminalFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelMaximized && terminalFocus"
+    },
+    {
+        "key": "ctrl+n ctrl+p",
+        "command": "workbench.action.terminal.newWithProfile",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "workbench.action.terminal.kill"
+    }
+]
